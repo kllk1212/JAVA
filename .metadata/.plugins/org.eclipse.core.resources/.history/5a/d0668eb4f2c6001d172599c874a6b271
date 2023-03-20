@@ -1,0 +1,96 @@
+import java.util.Scanner;
+
+public class Ex08_Operation_Quiz {
+
+	public static void main(String[] args) {
+
+		Scanner sc = new Scanner(System.in);
+		// 입력값 3개 
+		String numStr1 = sc.nextLine();
+		int num1 = 0;
+		while(true) {
+			try {
+				num1 = Integer.parseInt(numStr1);
+			} catch (Exception e) {
+				System.out.println("입력오류");
+				System.out.println("숫자만 입력해주세요");
+				num = sc.nextLine();
+				continue;
+			}
+			break;
+		}
+		System.out.println("a : " + a);
+		
+		String b = sc.nextLine();
+		if(b.equals("-")|| b.equals("+") || b.equals("*") || b.equals("/")) {
+			
+		}else {
+			System.out.println("다시입력해주세요");
+			b = sc.nextLine();
+		}
+		
+		System.out.println("세번째 입력값 - 숫자");
+		String num2 = sc.nextLine();
+		int c = 0;
+		while(true) {
+			try {
+				c = Integer.parseInt(num2);
+			} catch (Exception e) {
+				System.out.println("입력오류");
+				System.out.println("숫자만 입력해주세요");
+				num1 = sc.nextLine();
+				continue;
+			}
+			break;
+		}
+		
+		int answer= 0;
+		
+		if(b.equals("-")) {
+			answer = a - c;
+		}if(b.equals("*")) {
+			answer = a * c;
+		}if(b.equals("/")) {
+			answer = a / c;
+		}if(b.equals("+")) {
+			answer = a + c;
+		}
+		
+		System.out.println("연산결과 : " + answer);		
+		
+		/*
+		System.out.println("첫번째 입력값 - 숫자");
+		int a = Integer.parseInt(sc.nextLine());
+		System.out.println("두번째 입력값 - 기호 + - * / ");
+		String b = sc.nextLine();
+		if(b.equals("-")|| b.equals("+") || b.equals("*") || b.equals("/")) {
+			
+		}else {
+			System.out.println("다시입력해주세요");
+			b = sc.nextLine();
+		}
+		System.out.println("세번째 입력값 - 숫자");
+		int c = Integer.parseInt(sc.nextLine());
+		
+		int answer= 0;
+		
+		if(b.equals("-")) {
+			answer = a - c;
+		}if(b.equals("*")) {
+			answer = a * c;
+		}if(b.equals("/")) {
+			answer = a / c;
+		}if(b.equals("+")) {
+			answer = a + c;
+		}
+		
+		System.out.println("연산결과 : " + answer);
+		*/
+		
+		
+		
+		
+		
+	}
+
+}

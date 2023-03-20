@@ -1,0 +1,110 @@
+import java.util.HashMap;
+import java.util.Scanner;
+
+public class Ex06_Operation {
+	
+	public static void main(String[] args) {
+		
+		// 대입연산자
+		// += , -= , *= , /=
+		
+		/*
+		int sum = 0;
+		sum -= sum; // sum = sum -1;
+		sum += 1; // sum = sum +1;
+		System.out.println("sum : " + sum);
+		*/
+		/*
+			if(조건식) { }
+			
+			if(조건식) { } else { }
+			
+			if(조건식) { } else if(조건식) { } ..... else { }
+			
+			
+			간단한 학점 계산기
+			
+			학점 : A+ , A- , B+ , B-, ..... F
+			// a+ a- b+ b- c+ c- d+ d- e+ d- f
+			
+			판단기준 :  90점 이상 이고  95점 이상
+			// 90 80 70  나머지
+			90점 이상 A 95점 이상 A+ 다시판단
+			80점 이상 B 85점 이상 B+ 다시판단 
+			70점 이상 C 75점 이상 C+ 다시판단 
+			나머지 f
+			
+		*/
+		
+		Scanner sc = new Scanner(System.in);
+		System.out.println("학점을 입력하세요");
+	
+		int score = sc.nextInt();
+		String grade = ""; // a+ a- .....
+		
+		if(score >= 90) {
+			grade = "A-";
+			if(score >= 95 ) {
+				grade = "A+";
+			}
+		}else if(score >= 80) {
+			grade = "B-";
+			if(score >= 85 ) {
+				grade = "B+";
+			}
+		}else if(score >= 70) {
+			grade = "C-";
+			if(score >= 75 ) {
+				grade = "C+";
+			}
+		}else {
+			grade = "F";
+		}
+		
+		System.out.println("너의 grade : " + grade);
+		
+		for(char i = 'A'; i <='Z'; i++) {
+			System.out.println(i);
+		}
+		
+		
+		
+		
+		
+		
+		
+		/*
+		while(true) {
+			System.out.println("학점 입력 시스템");
+			System.out.println("1.입력 2.입력종료");
+			
+			HashMap<String, Integer> map = new HashMap<>();
+			
+			int num = sc.nextInt(); 
+			if(num == 1) {
+				System.out.println("이름 입력");
+				String name = sc.nextLine();
+				if(name instanceof String == false) {
+					System.out.println("오류 이름 재입력");
+					name = sc.nextLine();
+				}
+				System.out.println("학점 입력");
+				int point = sc.nextInt();
+				if()
+				map.put(name, point);
+				
+				
+			}if(num == 2) {
+				System.out.println("입력종료");
+				break;
+			}else {
+				System.out.println("입력오류");
+			}
+		}
+		*/
+		
+		
+		
+	}
+	
+}

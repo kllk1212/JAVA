@@ -1,0 +1,50 @@
+import java.util.ArrayList;
+
+public class Test {
+
+	
+	public static void main(String[] args) {
+
+		
+		String numbers = "00222345";
+		int number;
+		int length = 0;
+		String str = "";
+		
+		while(true) {
+			
+			if(numbers.substring(0,1).equals("0")){
+				//
+			}
+		}
+		
+		if(numbers.substring(0,1).equals("0")) {
+			str = numbers.substring(1,numbers.length());
+			length = str.length();
+			System.out.println("변환값 : " + str);
+			System.out.println("숫자의 길이 : " + length);
+			//number = Integer.parseInt(str);
+		}else {
+			str = numbers;
+			length = str.length();
+			System.out.println("변환값 : " + str);
+			System.out.println("숫자의 길이 : " + length);
+		}
+		
+
+		
+		
+	
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+	}
+
+}

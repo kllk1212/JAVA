@@ -1,0 +1,47 @@
+import java.util.ArrayList;
+
+public class Test {
+
+	
+	public static void main(String[] args) {
+
+		
+		String numbers = "02345";
+		int number;
+		int length = 0;
+		String str = "";
+		
+		if(numbers.substring(0,1).equals("0")) {
+			str = numbers.substring(1,numbers.length());
+			length = str.length();
+			System.out.println("변환값 : " + str);
+			System.out.println("숫자의 길이 : " + length);
+			//number = Integer.parseInt(str);
+		}
+		// ArrayList<Integer> list = new ArrayList<>();
+		
+		
+		for(int i = 0; i < length; i++) {
+			int j = length;
+			String oneChar = String.valueOf(str.charAt(i));
+			String lastChar = String.valueOf(str.charAt(j));
+			j--;
+			System.out.println("**" + i+j);
+			
+		}
+		
+		
+	
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+	}
+
+}
